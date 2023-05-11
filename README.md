@@ -11,7 +11,7 @@ In this work, the applications of Fast Fourier Transform for image compression h
 
 # 2. Principles
 ## 2.1 2D-Fourier Transform
-The two-dimensional Fourier transform of a matrix of data  $X \in R^{n \times m}$ is achieved by first applying the one-dimensional Fourier transform to every row of the matrix, 
+The two-dimensional Fourier transform of a matrix of data  $X \in \mathbb{R}^{n \times m}$ is achieved by first applying the one-dimensional Fourier transform to every row of the matrix, 
 and then applying the one-dimensional Fourier transform to every column of the intermediate matrix. 
 Switching the order of taking the Fourier transform of rows and columns does not change the result.
 
