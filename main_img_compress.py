@@ -14,7 +14,7 @@ plt.title('Original image in gray scale')
 
 plt.axis('off')
 
-Bt = np.fft.fft2(B)
+Bt = np.fft.fft2(B)                        # perform 2D FFT
 Btsort = np.sort(np.abs(Bt.reshape(-1)))   # sort by magnitude
 
 #zero out all small coefficients and inverse transform
