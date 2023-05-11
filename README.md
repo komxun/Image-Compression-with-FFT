@@ -34,6 +34,9 @@ then inverse Fourier transform back to get the compressed image. As a result, th
 |:--:| 
 | *Schematic of image compression processing using FFT* |
 
+In this work, 2D FFT will be executed using **np.fft.fft2 **, then items in 2D FFT vector will be sorted by magnitude. The obtained Fourier coefficients will be kept only for the largest 10%, 5%, 1%, and 0.2% for compression performance comparison.
+https://github.com/komxun/Image-Compression-with-FFT/blob/76eecd5e95dd2358cc659fd4c35b44e7e382147b/main_img_compress.py#L17C6-L26
+
 # 4. Results
 The image compression is done with various thresholds keeping 10%, 5%, and 0.2% of the largest Fourier coefficients. Here the image is converted to grayscale for simplicity.
 |![image](https://github.com/komxun/Image-Compression-with-FFT/assets/133139057/673fb463-213e-4c6b-a730-1af1f637ed57)|
